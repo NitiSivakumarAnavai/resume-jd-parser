@@ -1,0 +1,7 @@
+
+
+streamlit
+google-genai
+pdfplumber
+sentence-transformers
+scikit-learn
