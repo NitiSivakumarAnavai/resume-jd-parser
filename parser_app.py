@@ -9,7 +9,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 import streamlit as st
 
 # Entering API key 
-client = genai.Client(api_key="AQ.Ab8RN6KZs7y9D0FudWG0Mon3qJec04rqwLKJDgFkVcyE9ep_SQ")
+client = genai.Client(
+    api_key=st.secrets["GEMINI_API_KEY"]
+)
 
 # Intializing Embedding Model
 @st.cache_resource
